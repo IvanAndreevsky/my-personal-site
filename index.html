@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Андреевский | Личный сайт</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ПРЕЛОАДЕР -->
+    <div id="preloader">
+        <img src="static/images/preloader.gif" alt="Загрузка страницы">
+    </div>
+
+    <header>
+        <div class="logo">Иван Андреевский</div>
+        <nav>
+            <a href="index.html" class="active">Обо мне</a>
+            <a href="experience.html">Опыт работы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="portfolio.html">Портфолио</a>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="photo-frame">
+                        <div class="photo-slider" id="photoSlider">
+                            <img src="static/images/Me/Me1.jpg" alt="Иван Андреевский" class="slide active">
+                            <img src="static/images/Me/Me2.jpg" alt="Иван Андреевский" class="slide">
+                            <img src="static/images/Me/Me3.jpg" alt="Иван Андреевский" class="slide">
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <h1>Иван Андреевский</h1>
+                        <p class="age" id="ageValue"></p>
+                        <p class="desc">Студент МГТУ им. Н.Э. Баумана<br>Кафедра «Экономика и организация производства»<br>Направление «Управление инновационной деятельностью» (R&D менеджмент), <strong>2 курс</strong></p>
+                        <div class="hero-buttons">
+                            <a href="experience.html" class="btn btn-primary">Опыт работы →</a>
+                            <a href="contacts.html" class="btn btn-secondary">Контакты →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Коммуникации и управление</h3>
+                        <p>Легко налаживаю коммуникацию с людьми всех возрастов. Умею налаживать и руководить процессами в больших группах. Провожу мероприятия.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Технические навыки</h3>
+                        <p>Большой опыт работы в офисных системах MS Office (Word, Excel, PowerPoint). Владение английским на уровне B1.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Писательское мастерство</h3>
+                        <p>Учился работать с текстами по книге Максима Ильяхова и Людмилы Сырачевой «Пиши Сокращай».</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Экономика и маркетинг</h3>
+                        <p>Изучал работы по книгам: «Экономист под прикрытием» Тима Харфорда, «Хулиномика» Алексея Маркова, «Цель» Элияху Голдратта. Сейчас читаю Филиппа Котлера «Основы маркетинга».</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <div class="container">
+                <h2 class="section-title">Мои хобби</h2>
+                <div class="hobbies-list">
+                    <div class="hobby-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('static/images/play.jpg');">
+                        <div class="hobby-icon">🎲</div>
+                        <h3>Настольная игра</h3>
+                        <p>Пишу собственную настольную игру</p>
+                    </div>
+                    <div class="hobby-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('static/images/camp.jpg');">
+                        <div class="hobby-icon">📜</div>
+                        <h3>История и путешествия</h3>
+                        <p>Очень люблю историю и путешествия</p>
+                    </div>
+                    <div class="hobby-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('static/images/water.jpg');">
+                        <div class="hobby-icon">🛶</div>
+                        <h3>Водные походы</h3>
+                        <p>Инструктор-проводник по водному туризму</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievement">
+            <div class="container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-text">
+                        <h3>Лучший барный дуэт — февраль 2025</h3>
+                        <p>Победил в конкурсе на лучшую настойку + закуску</p>
+                    </div>
+                </div>
+                <div class="bar-slider-container">
+                    <div class="bar-slider" id="barSlider">
+                        <img src="static/images/BarContect/0.jpg" alt="Барный конкурс 1" class="bar-slide active">
+                        <img src="static/images/BarContect/1.jpg" alt="Барный конкурс 2" class="bar-slide">
+                        <img src="static/images/BarContect/2.jpg" alt="Барный конкурс 3" class="bar-slide">
+                        <img src="static/images/BarContect/3.jpg" alt="Барный конкурс 4" class="bar-slide">
+                    </div>
+                    <div class="bar-slider-nav">
+                        <button class="bar-prev">◀</button>
+                        <span class="bar-counter">1 / 4</span>
+                        <button class="bar-next">▶</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="favorite-place" id="place">
+            <div class="container">
+                <h2 class="section-title">Любимое место</h2>
+                <div class="place-content">
+                    <div class="place-text">
+                        <h3>Церковь на берегу реки Медведица с родником</h3>
+                        <p>Тихое и красивое место, где можно отдохнуть душой и телом. Чистый родник дарит живительную воду, а вид на реку успокаивает и вдохновляет.</p>
+                    </div>
+                    <div class="place-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a4b3c2d1e0f9g8h7i6j&source=constructor&mode=search&text=Церковь%20Николая%20Чудотворца%20в%20Старых%20Сетках&ll=37.610479%2C57.460000&z=14" 
+                                width="100%" 
+                                height="350" 
+                                frameborder="0"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Андреевский Иван Антонович</p>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
